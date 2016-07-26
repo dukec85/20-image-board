@@ -15,10 +15,17 @@
 | Route.resource('user', 'UserController')
 */
 
-const Route = use('Route')
+const Route = use('Route');
 
-Route.on('/').render('welcome')
-
+Route.on('/').render('welcome');
 Route.get('/photos', function * (req, res) {
-  yield res.sendView('photos')
+const {url,caption} = yield req.session.all();
+  yield res.sendView('photos', { url, caption });
+});
+
+Route.post('/photos', function * (req,res){
+  const url = req.input('url');
+  const caption = req.input('caption');
+  yield req.session.put({ url, caption });
+  res.redirect('/photos');
 });
