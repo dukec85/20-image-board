@@ -6,38 +6,133 @@
 @import 'box-sizing';
 @import 'adonis';
 
-body {
+// body {
+//  margin: 0;
+// }
+
+// .app {
+// background: #006080;
+// }
+
+// .app__nav {
+//  background-color: #006080;
+// }
+
+// .top-nav {
+//  color: #006080;
+//  margin-left: 15%;
+// }
+
+// .button {
+//  color: #006080;
+// }
+
+// .app-main {
+
+// }
+
+// .container {
+
+// }
+
+// .main {
+
+// }
+
+// .photo-container {
+
+// }
+
+*body {
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-font-feature-settings: "kern", "liga", "pnum";
+  -moz-font-feature-settings: "kern", "liga", "pnum";
+  -ms-font-feature-settings: "kern", "liga", "pnum";
+  font-feature-settings: "kern", "liga", "pnum";
+  -webkit-font-smoothing: antialiased;
+  font-weight: lighter;
+  background: #ffffff;
+}
+
+* {
+  padding: 0;
   margin: 0;
 }
 
-.app {
- background: red;
+.__banner {
+  background: #006080;
+  max-height: 2rem;
 }
 
-.app_nav {
-
+.__banner .banner__inner h1 {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: #006080;
+  border: solid #000000;
+  background-color: #000000;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  border-width: 0.3rem;
+  padding-left: 0.5%;
+  margin-top: 1%;
+  margin-bottom: -2.5%;
+  margin-left: 15%;
 }
 
-.top-nav {
-
+.__banner .banner__inner h2 {
+  margin-bottom: 90%;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 1.5px;
+  color: #ffffff;
 }
 
-.plus {
-
+.__banner .banner__inner p,
+.__banner .banner__inner a {
+  color: #fff;
+  font-size: 2px;
 }
 
-.app-main {
-
+.__banner .banner__inner h2 span {
+  display: inline-block;
+  margin-bottom: 70%
 }
 
-.container {
-
+.__footer {
+  text-align: center;
+  margin: auto;
+  right: 0;
+  left: 0;
 }
 
-.main {
-
+.__footer ul {
+  display: table;
+  margin: auto;
 }
 
-.photo-container {
+.__footer li {
+  border-left: solid 2px #ccc;
+  display: table-cell;
+}
 
+.__footer li:first-child {
+  border: none;
+}
+
+.__footer li a {
+  transition: opacity 0.5s;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0px 3px;
+  font-size: 13px;
+  opacity: 0.8;
+  color: #ccc;
+}
+
+.__footer li a:hover {
+  opacity: 1;
 }

@@ -1,4 +1,4 @@
-body {
+*body {
   font-family: 'Source Sans Pro', sans-serif;
   -webkit-font-feature-settings: "kern", "liga", "pnum";
   -moz-font-feature-settings: "kern", "liga", "pnum";
@@ -15,21 +15,7 @@ body {
 }
 
 .__banner {
-  background: #744d82;
-  background: -moz-radial-gradient(top, ellipse cover, #744d82 11%, #503d67 99%, #503d67 100%);
-  background: -webkit-gradient(radial, top center, 0, center center, 100%, color-stop(11%, #744d82), color-stop(99%, #503d67), color-stop(100%, #503d67));
-  background: -webkit-radial-gradient(top, ellipse cover, #744d82 11%, #503d67 99%, #503d67 100%);
-  background: -o-radial-gradient(top, ellipse cover, #744d82 11%, #503d67 99%, #503d67 100%);
-  background: -ms-radial-gradient(top, ellipse cover, #744d82 11%, #503d67 99%, #503d67 100%);
-  background: radial-gradient(ellipse at top, #744d82 11%, #503d67 99%, #503d67 100%);
-}
-
-.__banner {
-  height: 80vh;
-  width: 100%;
-  padding-bottom: 30px;
-  text-align: center;
-  display: table;
+  background: #006080;
 }
 
 .__banner .banner__inner {
@@ -40,14 +26,14 @@ body {
 .__banner .banner__inner h1 {
   font-weight: 500;
   font-size: 180px;
-  color: #ffffff;
+  color: #000000;
 }
 
 .__banner .banner__inner h2 {
-  margin-bottom: 25px;
+  margin-bottom: 2px;
   text-align: center;
   letter-spacing: 3px;
-  margin-top: 80px;
+  margin-top: 8px;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 16px;
