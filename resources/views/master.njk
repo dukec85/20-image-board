@@ -12,19 +12,26 @@
 <body>
 
   <section>
-    <div class="__wrapper">
-      {% block content %}
-      {% endblock %}
+      <div class="__wrapper">
+        {% block content %}
+        {% endblock %}
 
-      {% block footer %}
-        <div class="__footer">
+        {% block footer %}
 
-        </div>
-      {% endblock %}
-    </div><!-- end wrapper -->
-  </section>
-</body>
-<script type="text/javascript">
+        {% endblock %}
+      </div>
+    </section>
+    <script type="text/javascript">
 
-</script>
-</html>
+      const button = document.querySelector('.toggle-button');
+      const form = document.querySelector('.container__form');
+
+      button.addEventListener('click', () => {
+        form.classList.toggle('active');
+      });
+
+    </script>
+  </body>
+
+
+  </html>

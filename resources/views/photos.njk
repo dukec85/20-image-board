@@ -1,48 +1,46 @@
 {% extends "master" %}
 
 {% block content %}
+  <div class="app">
+    <div class="app__header">
+      <nav class="top-nav">
+        <div class="container__nav">
+          <div class="nav-btn" ><i class="fa fa-plus-circle toggle-button" aria-hidden="true"></i></div>
+        </div>
+      </nav>
+    </div>
 
-<div class="app">
-  <div class="app__header">
-    <nav class="top-nav">
-      <div class="container__nav">
-        <button class="nav-button" type="button" name="button"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+      <div class="container__form active">
+        <form class="form" action="/photos" method="POST">
+          {{ csrfField }}
+
+          <div class="input-wrapper">
+            <input class="form-input" type="text" name="url" value="" placeholder="Image URL">
+            <textarea class="form-input" type="text" name="caption" value="" placeholder="Image Caption"></textarea>
+          </div>
+          <div class="btn-wrapper">
+            <button class="btn cancel-btn"type="clear" name="button">Cancel</button>
+            <button class="btn submit-btn"type="submit" name="button"><i class="fa fa-picture-o" aria-hidden="true"></i> Add Image</button>
+          </div>
+        </form>
       </div>
-    </nav>
-  </div>
+    </div>
 
-    <div class="container__form">
-      <form class="form" action="/photos" method="POST">
-        {{ csrfField }}
-
-        <div class="input-wrapper">
-          <input class="form-input" type="text" name="url" placeholder="Image URL">
-          <textarea class="form-input" type="text" name="caption" placeholder="Image Caption"></textarea>
-        </div>
-        <div class="button-wrapper">
-          <button class="button button-cancel" type="clear" name="button"><div class="white">Cancel</div></button>
-          <button class="button button-add" type="submit" name="button"><i class="fa fa-picture-o" aria-hidden="true"></i><div class="white">Add Image</div></button>
-        </div>
-      </form>
+    <div class="app__main">
+      <div class="container">
+        {% for photo in photos %}
+          <ul class="photos-list">
+            <li class="photos-list__item">
+              <div class="image-wrapper">
+                <img class="image" src="{{ photo.url }}" alt="" />
+              </div>
+              <div class="caption-wrapper">
+                <span class="caption">{{ photo.caption }}</span>
+              </div>
+            </li>
+          </ul>
+        {% endfor %}
+      </div>
     </div>
   </div>
-
-  <div class="app__main">
-    <div class="container">
-
-      <ul class="photos-list">
-        <li class="photos-list__item">
-          <div class="image-wrapper">
-            <img class="image" src="{{url}}"/>
-          </div>
-          <div class="text-wrapper">
-            <span class="text">{{caption}}</span>
-          </div>
-        </li>
-      </ul>
-
-    </div>
-  </div>
-</div>
-
 {% endblock %}
