@@ -1,6 +1,6 @@
-'use strict'
+'use strict';
 
-const Schema = use('Schema')
+const Schema = use('Schema');
 
 class CreatePhotosTableSchema extends Schema {
 
@@ -19,4 +19,4 @@ class CreatePhotosTableSchema extends Schema {
 
 }
 
-module.exports = CreatePhotosTableSchema
+module.exports = CreatePhotosTableSchema;
