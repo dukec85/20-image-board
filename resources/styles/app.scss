@@ -124,6 +124,7 @@ ul {
 .photos-list__item {
   width: 100%;
   margin: auto;
+  box-shadow: 0.5rem 0.5rem 0.5rem #D3D3D3;
 }
 
 .image-wrapper {
@@ -137,5 +138,5 @@ ul {
 
 .text-wrapper {
   padding: 2rem;
-  background: #e0e1e2;
+  background: #fff;
 }
