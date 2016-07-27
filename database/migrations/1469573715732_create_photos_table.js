@@ -10,7 +10,7 @@ class CreatePhotosTableSchema extends Schema {
       table.string('url');
       table.text('caption');
       table.timestamps();
-    })
+    });
   }
 
   down () {
