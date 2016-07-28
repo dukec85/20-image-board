@@ -1,0 +1,147 @@
+// @import 'yoga';
+// @import 'normalize';
+
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+@import 'font-awesome';
+@import 'box-sizing';
+//@import 'adonis';
+
+body {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 100vh;
+  background-color: #fff;
+  overflow: auto;
+}
+
+.app__header {
+  background-color: #486d99;
+}
+
+.top-nav {
+  color: #fff;
+}
+
+.nav-button {
+  padding: 0.5rem;
+  border: 0;
+  color: #486d99;
+  background-color: transparent;
+  font-size: 2rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.container__nav {
+  width: 100%;
+  max-width: 60rem;
+  margin: auto;
+}
+
+.app__main {
+  background: #e0e1e2;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+  background: #b6b6b6;
+
+  &__form {
+    width: 100%;
+    max-width: 50rem;
+    max-height: 40vh;
+    margin: 0 auto;
+  }
+}
+
+.form {
+  padding: 1rem 0;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 0.1rem solid #e0e1e2;
+  font-size: 1rem;
+}
+
+.fa-plus-circle {
+  color: #000000;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  color: #e0e1e2;
+}
+
+.button {
+  margin: 0.8rem;
+  margin-right: 0;
+  padding: 2rem 4rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.button-add {
+  background: #1cb01c;
+  color: #fff;
+}
+
+.button-cancel {
+  background: #b6b6b6;
+  color: #fff;
+}
+
+.photos-list {
+  width: 85%;
+  margin: auto;
+  background: #b6b6b6;
+}
+
+.photos-list__item {
+  width: 100%;
+  margin: auto;
+}
+
+.image-wrapper {
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.text-wrapper {
+  padding: 2rem;
+  background: #fff;
+}

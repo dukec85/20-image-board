@@ -9,13 +9,27 @@
   background: #ffffff;
 }
 
-* {
+/* {
   padding: 0;
   margin: 0;
 }
 
 .__banner {
-  background: #006080;
+  background: #744d82;
+  background: -moz-radial-gradient(top, ellipse cover, #744d82 11%, #503d67 99%, #503d67 100%);
+  background: -webkit-gradient(radial, top center, 0, center center, 100%, color-stop(11%, #744d82), color-stop(99%, #503d67), color-stop(100%, #503d67));
+  background: -webkit-radial-gradient(top, ellipse cover, #744d82 11%, #503d67 99%, #503d67 100%);
+  background: -o-radial-gradient(top, ellipse cover, #744d82 11%, #503d67 99%, #503d67 100%);
+  background: -ms-radial-gradient(top, ellipse cover, #744d82 11%, #503d67 99%, #503d67 100%);
+  background: radial-gradient(ellipse at top, #744d82 11%, #503d67 99%, #503d67 100%);
+}
+
+.__banner {
+  height: 80vh;
+  width: 100%;
+  padding-bottom: 30px;
+  text-align: center;
+  display: table;
 }
 
 .__banner .banner__inner {
@@ -26,14 +40,14 @@
 .__banner .banner__inner h1 {
   font-weight: 500;
   font-size: 180px;
-  color: #000000;
+  color: #ffffff;
 }
 
 .__banner .banner__inner h2 {
-  margin-bottom: 2px;
+  margin-bottom: 25px;
   text-align: center;
   letter-spacing: 3px;
-  margin-top: 8px;
+  margin-top: 80px;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 16px;
