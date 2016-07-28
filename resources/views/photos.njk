@@ -14,14 +14,16 @@
         <form class="form" action="/photos" method="POST">
           {{ csrfField }}
 
+        <div class="add">
           <div class="input-wrapper">
             <input class="form-input" type="text" name="url" value="" placeholder="Image URL">
             <textarea class="form-input" type="text" name="caption" value="" placeholder="Image Caption"></textarea>
           </div>
-          <div class="button-wrapper">
-            <button class="button-cancel"type="clear" name="button">Cancel</button>
-            <button class="button-add"type="submit" name="button"><i class="fa fa-picture-o" aria-hidden="true"></i> Add Image</button>
-          </div>
+        </div>
+        <div class="button-wrapper">
+          <button class="button-cancel"type="clear" name="button">Cancel</button>
+          <button class="button-add"type="submit" name="button"><i class="fa fa-picture-o" aria-hidden="true"></i> Add Image</button>
+        </div>
         </form>
       </div>
     </div>
